@@ -1,230 +1,94 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 /*@font-face {
   font-family: 'Avenir LT Std 55 Roman';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 55 Roman'), url('AvenirLTStd-Roman.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 55 Oblique';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 55 Oblique'), url('AvenirLTStd-Oblique.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 35 Light';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 35 Light'), url('AvenirLTStd-Light.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 35 Light Oblique';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 35 Light Oblique'), url('AvenirLTStd-LightOblique.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 45 Book';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 45 Book'), url('AvenirLTStd-Book.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 45 Book Oblique';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 45 Book Oblique'), url('AvenirLTStd-BookOblique.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 65 Medium';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 65 Medium'), url('AvenirLTStd-Medium.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 65 Medium Oblique';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 65 Medium Oblique'), url('AvenirLTStd-MediumOblique.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 85 Heavy';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 85 Heavy'), url('AvenirLTStd-Heavy.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 85 Heavy Oblique';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 85 Heavy Oblique'), url('AvenirLTStd-HeavyOblique.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 95 Black';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 95 Black'), url('AvenirLTStd-Black.woff') format('woff');
   }
-
-
+  
+  
   @font-face {
   font-family: 'Avenir LT Std 95 Black Oblique';
   font-style: normal;
   font-weight: normal;
   src: local('Avenir LT Std 95 Black Oblique'), url('AvenirLTStd-BlackOblique.woff') format('woff');
   }*/
-body {
-  font-size: 12px;
-}
-
-.nav__barre {
-  z-index: 2;
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-}
-.nav__barre nav {
-  z-index: 10;
-  background-color: black;
-  height: 52px;
-  padding-top: 15px;
-}
-.nav__barre nav img {
-  display: block;
-  height: 23px;
-  margin: 5px auto auto auto;
-  z-index: 10;
-}
-.nav__barre nav ul {
-  position: absolute;
-}
-.nav__barre nav ul li {
-  width: 42px;
-  height: 3px;
-  background-color: white;
-  margin: 5px 0px 5px 20px;
-}
-
-.video {
-  max-width: 100vw;
-  max-height: 40vh;
-  overflow: hidden;
-}
-.video video {
-  width: 100%;
-  height: 100%;
-}
-
-.nav__place {
-  background-color: #2B2B2B;
-  z-index: auto;
-  height: 203px;
-  transform: translateY(0px);
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  z-index: 1;
-}
-
-.article {
-  margin-top: 10px;
-  height: 577px;
-  width: 98%;
-  background-color: #F4F4F4;
-  text-align: center;
-  overflow: hidden;
-}
-.article h2 {
-  font-size: 18px;
-  padding-top: 70px;
-}
-.article p {
-  padding-top: 20px;
-}
-.article img {
-  margin-left: 4%;
-  height: 306px;
-  width: 214px;
-  padding-top: 80px;
-}
-
-.look__the__produit {
-  color: white;
-  font-size: 22px;
-  height: 42px;
-  width: 199px;
-  display: block;
-  margin: auto;
-  background-color: #181818;
-  margin-top: 40px;
-  border: none;
-}
-
-.article--black {
-  color: white;
-  background-color: black;
-}
-
-/*# sourceMappingURL=/styles.b62d17c4.css.map */
