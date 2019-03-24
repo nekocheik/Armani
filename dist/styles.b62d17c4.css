@@ -247,4 +247,11 @@ body {
   background-color: black;
 }
 
+article {
+  text-align: center;
+}
+article h2 {
+  font-size: 30px;
+}
+
 /*# sourceMappingURL=/styles.b62d17c4.css.map */
