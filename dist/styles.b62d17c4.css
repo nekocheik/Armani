@@ -137,6 +137,11 @@ table {
   }*/
 body {
   font-size: 12px;
+  padding-bottom: 60px;
+}
+
+.nav__barre nav img.active {
+  transform: translateY(-140px);
 }
 
 .nav__barre {
@@ -152,6 +157,7 @@ body {
   padding-top: 15px;
 }
 .nav__barre nav img {
+  transition: transform 750ms;
   display: block;
   height: 23px;
   margin: 5px auto auto auto;
@@ -181,11 +187,24 @@ body {
   background-color: #2B2B2B;
   z-index: auto;
   height: 203px;
-  transform: translateY(0px);
   position: fixed;
   bottom: 0px;
   width: 100%;
   z-index: 1;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  transition: transform 1s;
+  transform: translateY(203px);
+}
+.nav__place.active {
+  transform: translateY(0px);
+}
+.nav__place p {
+  margin: 20px;
+}
+.nav__place p:nth-child(1) {
+  padding-top: 35px;
 }
 
 .article {

@@ -1,7 +1,10 @@
 body{
   font-size: 12px;
+  padding-bottom: 60px;
 }
-
+.nav__barre nav img.active{
+  transform: translateY(-140px);
+}
 .nav__barre{
   z-index: 2;
   width: 100%;
@@ -13,11 +16,12 @@ body{
     height: 52px;
     padding-top: 15px;
     img{
+      transition: transform 750ms;
       display: block;
       height: 23px;
       margin: 5px auto auto auto ;
-      z-index: 10;
-    }
+      z-index: 10 ;
+    } 
     ul{
       position: absolute;
       li{
@@ -44,10 +48,23 @@ body{
   background-color: #2B2B2B;
   z-index: auto;
   height: 203px;
-  transform: translateY(0px);
   position: fixed ;
   bottom: 0px;
   width: 100% ;
   z-index: 1;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  transition: transform 1s;
+  transform: translateY(203px);
+  &.active{
+    transform: translateY(0px);
+  }
+  p{
+    &:nth-child(1) {
+      padding-top: 35px;
+    } 
+    margin: 20px;
+  }
 }
 
