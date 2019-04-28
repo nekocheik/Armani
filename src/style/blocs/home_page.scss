@@ -1,13 +1,22 @@
 ////_____________________________________________ _____________________________________________ ////
 #home_page{
-
+  
   ////_____________________________________________produit_____________________________________________ ////
   .produit{
     padding-top: 30px;
     background-color: #F4F4F4;
     text-align: center;
+    margin-top: 10px;
+    height: 577px;
+    width: 98%;
+    background-color: $grisprincipal ;
+    text-align: center;
+    overflow: hidden;
     h2{
-      font-size: 22px;
+      font-size: 18px;
+      padding-top: 70px; 
+    }p{
+      padding-top: 20px;
     }
     button{
       font-weight: 100;
@@ -24,43 +33,56 @@
     &.article--black{
       color: white;
       background-color: black;
+    }  img{
+      margin-left: 4%;
+      height: 306px;
+      width:  214px;
+      padding-top: 80px;
     }
   }
   
-  article.new{
-    position: relative;
-    display: block;
-    text-align: center;
-    width: 90%;
-    margin: auto;
-    color: white;
-    background-image: url(../assets/image/armani-montres-shawn-850x1024/armani-montres-shawn-850x1024.png) ;
-    height: 95vw;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-top: 30px;
-    h3{
-      font-size:  17px;
-      padding-top: 20px;
+  article {
+   margin-top: 30px;
+    background-color: $darkgris;
+    h2{
+      font-size:  30px;
+      padding-top: 10px;
+      text-align: center;
     }
-    p{
-      padding-top: 25%;
-      font-size: 18px;
+    .new{
+      position: relative;
+      display: block;
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      color: white;
+      background-image: url(../assets/image/armani-montres-shawn-850x1024/armani-montres-shawn-850x1024.png) ;
+      height: 95vw;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin-top: 30px;
+      h3{
+        font-size:  17px;
+        padding-top: 20px;
+      }
+      p{
+        padding-top: 25%;
+        font-size: 18px;
+      }
     }
+    button.read__next{
+      margin-top: 15%;
+      font-weight: 100;
+      height: 42px;
+      width:  199px;
+      background-color: #181818;
+      border: none;
+      color: white;
+      font-size: 22px;
+    }  
   }
-  button.read__next{
-    margin-top: 15%;
-    font-weight: 100;
-    height: 42px;
-    width:  199px;
-    background-color: #181818;
-    border: none;
-    color: white;
-    font-size: 22px;
-  }
-  
   
 }
 
