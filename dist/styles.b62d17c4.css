@@ -183,7 +183,7 @@ body {
   height: 100%;
 }
 
-.nav__place {
+.nav_hidden {
   background-color: #2B2B2B;
   z-index: auto;
   height: 203px;
@@ -197,13 +197,13 @@ body {
   transition: transform 1s;
   transform: translateY(203px);
 }
-.nav__place.active {
+.nav_hidden.active {
   transform: translateY(0px);
 }
-.nav__place p {
+.nav_hidden p {
   margin: 20px;
 }
-.nav__place p:nth-child(1) {
+.nav_hidden p:nth-child(1) {
   padding-top: 35px;
 }
 
@@ -233,7 +233,15 @@ body {
   padding-top: 80px;
 }
 
-.look__the__produit {
+#home_page .produit {
+  padding-top: 30px;
+  background-color: #F4F4F4;
+  text-align: center;
+}
+#home_page .produit h2 {
+  font-size: 22px;
+}
+#home_page .produit button {
   font-weight: 100;
   color: white;
   font-size: 22px;
@@ -245,24 +253,14 @@ body {
   margin-top: 40px;
   border: none;
 }
-
-.article--black {
+#home_page .produit.article--black {
   color: white;
   background-color: black;
 }
-
-article {
-  padding-top: 30px;
-  background-color: #F4F4F4;
-  text-align: center;
-}
-article h2 {
-  font-size: 30px;
-}
-
-.new {
+#home_page article.new {
   position: relative;
   display: block;
+  text-align: center;
   width: 90%;
   margin: auto;
   color: white;
@@ -274,16 +272,15 @@ article h2 {
   background-size: cover;
   margin-top: 30px;
 }
-.new h3 {
+#home_page article.new h3 {
   font-size: 17px;
   padding-top: 20px;
 }
-.new p {
+#home_page article.new p {
   padding-top: 25%;
   font-size: 18px;
 }
-
-button.read__next {
+#home_page button.read__next {
   margin-top: 15%;
   font-weight: 100;
   height: 42px;
