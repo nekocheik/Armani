@@ -1,22 +1,20 @@
 ////_____________________________________________ _____________________________________________ ////
 #home_page{
-  
-  ////_____________________________________________produit_____________________________________________ ////
+  ////_____________________________________________produit--smartphone_____________________________________________ ////
   .produit{
     padding-top: 30px;
-    background-color: #F4F4F4;
     text-align: center;
     margin-top: 10px;
     height: 577px;
     width: 98%;
     background-color: $grisprincipal ;
-    text-align: center;
     overflow: hidden;
     h2{
       font-size: 18px;
       padding-top: 30px; 
     }p{
       padding-top: 20px;
+      font-size: 12px
     }
     button{
       font-weight: 100;
@@ -34,14 +32,32 @@
       color: white;
       background-color: black;
     }  img{
-      margin-left: 4%;
       width: 214px;
       padding-top: 120px;
     }
+    
+    
+    ////_____________________________________________produit--tablet_____________________________________________ ////
+    @media screen and (min-width: 800px) {
+      height: 70vh;
+      h2{
+        font-size: 30px;
+        padding-top: 30px; 
+      }p{
+        padding-top: 20px;
+        font-size: 26px;
+      }
+      img{
+        width: 214px;
+        padding-top: 20px;
+      }
+    }
   }
   
+  ////_____________________________________________articles--smartphone_____________________________________________ ////
+  
   article {
-   margin-top: 30px;
+    margin-top: 30px;
     background-color: $darkgris;
     h2{
       font-size:  30px;
@@ -81,7 +97,23 @@
       color: white;
       font-size: 22px;
     }  
+    ////_____________________________________________articles--tablet_____________________________________________ ////
+    
+    @media screen and (min-width: 800px) {
+      .new {
+        height: 34vw;
+        margin-top: 0px;
+        p{
+          padding-top: 4%;
+          font-size: 18px;
+        }h2{
+
+        }
+          button.read__next {
+          margin-top: 5%;
+        }
+      } 
+    }
   }
-  
 }
 

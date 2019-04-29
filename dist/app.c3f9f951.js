@@ -155,9 +155,6 @@ exports.articles = articles;
 
 var _template = require("./template");
 
-var nav = "\n<section class=\"nav__barre\">\n  <nav>\n    <ul>\n      <li></li>\n      <li></li>\n      <li></li>\n    </ul>\n    <img src=\"assets/image/logo-armani.png\"  alt=\"logo\">\n  </nav>\n  <div class=\"nav_hidden\">\n    <p>Les montres</p>\n    <p>La marque</p>\n  </div>\n</section>\n";
-console.log('ok');
-document.body.innerHTML += nav;
 var buttonNav = document.querySelector('.nav__barre nav ul');
 buttonNav.addEventListener('click', function () {
   document.querySelector('.nav_hidden').classList.toggle('active');
