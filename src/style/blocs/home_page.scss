@@ -18,9 +18,15 @@
     text-align: center;
     margin-top: 10px;
     height: 577px;
-    width: 98%;
     background-color: $grisprincipal ;
     overflow: hidden;
+
+    &.produit--black{
+      color: white;
+      background-color: black;
+      right: 0px;
+    }
+
     h2{
       font-size: 18px;
       padding-top: 30px; 
@@ -40,10 +46,7 @@
       margin-top: 40px;
       border: none;
     }
-    &.article--black{
-      color: white;
-      background-color: black;
-    }  img{
+  img{
       width: 214px;
       padding-top: 120px;
     }
@@ -61,7 +64,9 @@
       }
       img{
         width: 214px;
-        padding-top: 20px;
+        padding-top: 100px;
+        // for center the image 
+        padding-left: 10px;
       }
     }
   }
@@ -83,13 +88,17 @@
       width: 90%;
       margin: auto;
       color: white;
-      background-image: url(../assets/image/armani-montres-shawn-850x1024/armani-montres-shawn-850x1024.png) ;
       height: 95vw;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
       margin-top: 30px;
+      &.new--one{
+        background-image: url(../assets/image/armani-montres-shawn-850x1024/armani-montres-shawn-850x1024.png) ;
+      }&.new--two{
+        background-image: url(../assets/image/maxresdefault.png) ;
+      }
       h3{
         font-size:  17px;
         padding-top: 20px;
