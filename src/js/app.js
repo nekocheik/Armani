@@ -9,7 +9,7 @@ buttonNav.addEventListener('click', () => {
 } )
 
 const readNext = document.querySelector('.read__next');
-const text = 'Lire la suite' ;
+let text = 'Lire la suite' ;
 
 readNext.addEventListener('click', () => {
   document.querySelector('.text__description').classList.toggle('active');
