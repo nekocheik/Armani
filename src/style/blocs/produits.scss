@@ -23,7 +23,8 @@
     height: 350px;;
     background: $grisprincipal;
     img{
-      width: 200px;
+      max-width: 226px;
+      max-height: 187px;
       display: none;
       margin: auto auto auto auto;
       &.active{
@@ -38,7 +39,7 @@
     margin: auto;
     justify-content: space-evenly;
     section{
-      transform: translateY(-50px);
+      transform: translateY(-45px);
       width: 24px;
       height: 24px;
       background-color: #626262;

@@ -118,6 +118,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/app.js":[function(require,module,exports) {
+function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only"); }
+
 //import { articles , produits } from './template';
 var buttonNav = document.querySelector('.nav__barre nav ul');
 buttonNav.addEventListener('click', function () {
@@ -128,10 +130,29 @@ var readNext = document.querySelector('.read__next');
 var text = 'Lire la suite';
 readNext.addEventListener('click', function () {
   document.querySelector('.text__description').classList.toggle('active');
-  text = text === 'Lire la suite' ? 'Fermer' : 'Lire la suite';
+  text = (_readOnlyError("text"), text === 'Lire la suite' ? 'Fermer' : 'Lire la suite');
   console.log(text);
   readNext.innerText = text;
 });
+var caroussel = document.querySelectorAll('#page__produit .picture img');
+var selectPictures = document.querySelectorAll('#page__produit .squares section');
+
+var _loop = function _loop(i) {
+  var selectPicture = selectPictures[i];
+  selectPicture.addEventListener('click', function () {
+    for (var _i = 0; _i < selectPictures.length; _i++) {
+      selectPictures[_i].className = '';
+      caroussel[_i].className = '';
+    }
+
+    caroussel[i].className = 'active';
+    selectPicture.className = 'active';
+  });
+};
+
+for (var i = 0; i < selectPictures.length; i++) {
+  _loop(i);
+}
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
