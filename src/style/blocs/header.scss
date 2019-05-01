@@ -49,6 +49,7 @@ body{
     transition: transform 500ms;
     transform: translateY(67px);
     transition-timing-function: linear;
+    font-family: Avenir-LT-Std-45-Book ;
     &.active{
       transform: translateY(-67px);
     }

@@ -30,9 +30,14 @@
     h2{
       font-size: 18px;
       padding-top: 30px; 
+      font-family: 'Avenir LT Std 85 Heavy';
+      span{
+        display: block;
+      }
     }p{
       padding-top: 20px;
-      font-size: 12px
+      font-size: 14px;
+      font-family: 'Avenir-LT-Std-45-Book';
     }
     button{
       font-weight: 100;
@@ -53,18 +58,21 @@
     
     
     ////_____________________________________________produit--tablet_____________________________________________ ////
-    @media screen and (min-width: 800px) {
-      height: 70vh;
+    @media screen and (min-width: 768px) {
+      max-height: 70vh;
       h2{
         font-size: 30px;
-        padding-top: 30px; 
+        padding-top: 30px;
+        span{
+          display: initial;
+        } 
       }p{
         padding-top: 20px;
         font-size: 26px;
       }
       img{
         width: 214px;
-        padding-top: 100px;
+        padding-top: 18px;
         // for center the image 
         padding-left: 10px;
       }
@@ -95,17 +103,31 @@
       background-size: cover;
       margin-top: 30px;
       &.new--one{
-        background-image: url(../assets/image/armani-montres-shawn-850x1024/armani-montres-shawn-850x1024.png) ;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.541), 
+          rgba(0, 0, 0, 0.541)
+          ),url(../assets/image/armani-montres-shawn-850x1024/armani-montres-shawn-850x1024.png);
+          background-size:cover;
+          background-repeat:no-repeat;
       }&.new--two{
-        background-image: url(../assets/image/maxresdefault.png) ;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45)
+          ),url(../assets/image/maxresdefault.png);
+          background-size:cover;
+          background-repeat:no-repeat;
       }
       h3{
+       margin-top: 30px;
+        font-family: 'Avenir LT Std 85 Heavy';
         font-size:  17px;
-        padding-top: 20px;
+        padding-top: 73px;
       }
       p{
-        padding-top: 25%;
         font-size: 18px;
+        font-family: 'Avenir LT Std 35 Light';
+        display: block;
+        margin: 5% auto auto auto;
       }
     }
     button.read__next{
@@ -120,7 +142,7 @@
     }  
     ////_____________________________________________articles--tablet_____________________________________________ ////
     
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 768px) {
       .new {
         height: 34vw;
         &:nth-child(3){
@@ -131,6 +153,7 @@
         }
         p{
           padding-top: 4%;
+          width: 65%;
         }
         button.read__next {
           margin-top: 5%;
@@ -148,10 +171,8 @@
           margin: auto 10vh auto auto;
         }
         p{
-          padding-top: 4%;
+          padding-top: 6%;
           font-size: 18px;
-        }h2{
-          
         }
         button.read__next {
           margin-top: 5%;
