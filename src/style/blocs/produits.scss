@@ -35,7 +35,6 @@
   .text__description{
     height: 30vh;
     overflow: hidden;
-    
     p{
       font-size: 16px;
       line-height: 1.80;
@@ -60,6 +59,31 @@
       display: block;
       margin: 10px auto 5px auto; 
       background-color: black;
+    }
+  }
+  .detailles{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    padding-top: 20px;
+    margin: auto;
+    .detaille{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      width: 140px;
+      height: 140px;
+      background-color: #F4F4F4;
+      p{
+        font-size: 16px;
+      }
+      .color__gold{
+        background-color: #FFD700;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+      }
     }
   }
 }

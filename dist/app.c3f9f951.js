@@ -125,10 +125,11 @@ buttonNav.addEventListener('click', function () {
   document.querySelector('.nav__barre img').classList.toggle('active');
 });
 var readNext = document.querySelector('.read__next');
-var text = readNext.innerText;
+var text = 'Lire la suite';
 readNext.addEventListener('click', function () {
   document.querySelector('.text__description').classList.toggle('active');
   text = text === 'Lire la suite' ? 'Fermer' : 'Lire la suite';
+  console.log(text);
   readNext.innerText = text;
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

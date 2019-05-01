@@ -9,10 +9,11 @@ buttonNav.addEventListener('click', () => {
 } )
 
 const readNext = document.querySelector('.read__next');
-var text = readNext.innerText ;
+var text = 'Lire la suite' ;
 
 readNext.addEventListener('click', () => {
   document.querySelector('.text__description').classList.toggle('active');
-  text = ( ( text === 'Lire la suite' ) ?  'Fermer' : 'Lire la suite' )
+  text = (  text === 'Lire la suite'  ?   'Fermer' : 'Lire la suite' )
+  console.log(text)
   readNext.innerText = text;
 })
