@@ -13,7 +13,7 @@
       font-size: 16px;
     }
   }
-
+  
   .picture{
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@
     height: 350px;;
     background: $grisprincipal;
     img{
-     width: 200px;
+      width: 200px;
       display: none;
       margin: auto auto auto auto;
       &.active{
@@ -31,7 +31,23 @@
       }
     }
   }
-
+  
+  .squares{
+    display: flex;
+    width: 200px;
+    margin: auto;
+    justify-content: space-evenly;
+    section{
+      transform: translateY(-50px);
+      width: 24px;
+      height: 24px;
+      background-color: #626262;
+      &.active{
+        background-color: black;
+      }
+    }
+  }
+  
   .text__description{
     height: 30vh;
     overflow: hidden;
@@ -44,12 +60,12 @@
         padding: 10px 0px 10px 0px;
       }
     }
-
+    
     &.active{
       height: 100%;
     }
   }
-
+  
   .read__next{
     font-size: 18px;
     &:before {
@@ -61,6 +77,9 @@
       background-color: black;
     }
   }
+  
+  
+  
   .detailles{
     display: flex;
     justify-content: space-evenly;
@@ -83,6 +102,89 @@
         width: 32px;
         height: 32px;
         border-radius: 100%;
+      }
+    }
+  }
+  h4.like__more{
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  
+  .produits{
+    .produit{
+      padding-top: 30px;
+      text-align: center;
+      margin-top: 10px;
+      height: 500px;
+      background-color: $grisprincipal ;
+      overflow: hidden;
+      position: relative;
+      
+      &.produit--black{
+        color: white;
+        background-color: black;
+        right: 0px;
+      }
+      
+      h2{
+        font-size: 18px;
+        padding-top: 30px; 
+        font-family: 'Avenir LT Std 85 Heavy';
+        span{
+          display: block;
+        }
+      }p{
+        padding-top: 20px;
+        font-size: 14px;
+        font-family: 'Avenir-LT-Std-45-Book';
+      }
+      button{
+        font-weight: 100;
+        color: white;
+        font-size: 22px;
+        height: 42px;
+        width:  199px;
+        display: block;
+        margin: auto;
+        background-color: #181818;
+        margin-top: 40px;
+        border: none;
+      }
+      img{
+        width: 214px;
+        padding-top: 60px;
+      }
+    }
+    
+    ////_____________________________________________produit--tablet_____________________________________________ ////
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 30px;
+      .produit{
+        width: 48vw;
+        h2{
+          font-size: 30px;
+          padding-top: 30px;
+          span{
+            display: initial;
+          } 
+        }p{
+          padding-top: 20px;
+          font-size: 26px;
+        }
+        img{
+          width: 214px;
+          padding-top: 18px;
+          // for center the image 
+          padding-left: 10px;
+        }
+      }
+      ////_____________________________________________produit--desktop_____________________________________________ ////
+      @media screen and (min-width: 1100px) {
+        img{
+          padding-top: 70px;
+        }
       }
     }
   }

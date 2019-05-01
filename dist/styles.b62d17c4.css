@@ -331,6 +331,21 @@ body {
 #page__produit .picture img.active {
   display: initial;
 }
+#page__produit .squares {
+  display: flex;
+  width: 200px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+#page__produit .squares section {
+  transform: translateY(-50px);
+  width: 24px;
+  height: 24px;
+  background-color: #626262;
+}
+#page__produit .squares section.active {
+  background-color: black;
+}
 #page__produit .text__description {
   height: 30vh;
   overflow: hidden;
@@ -383,6 +398,84 @@ body {
   height: 32px;
   border-radius: 100%;
 }
+#page__produit h4.like__more {
+  padding-top: 20px;
+  font-size: 18px;
+}
+#page__produit .produits .produit {
+  padding-top: 30px;
+  text-align: center;
+  margin-top: 10px;
+  height: 500px;
+  background-color: #F4F4F4;
+  overflow: hidden;
+  position: relative;
+}
+#page__produit .produits .produit.produit--black {
+  color: white;
+  background-color: black;
+  right: 0px;
+}
+#page__produit .produits .produit h2 {
+  font-size: 18px;
+  padding-top: 30px;
+  font-family: "Avenir LT Std 85 Heavy";
+}
+#page__produit .produits .produit h2 span {
+  display: block;
+}
+#page__produit .produits .produit p {
+  padding-top: 20px;
+  font-size: 14px;
+  font-family: "Avenir-LT-Std-45-Book";
+}
+#page__produit .produits .produit button {
+  font-weight: 100;
+  color: white;
+  font-size: 22px;
+  height: 42px;
+  width: 199px;
+  display: block;
+  margin: auto;
+  background-color: #181818;
+  margin-top: 40px;
+  border: none;
+}
+#page__produit .produits .produit img {
+  width: 214px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  #page__produit .produits {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+  }
+  #page__produit .produits .produit {
+    width: 48vw;
+  }
+  #page__produit .produits .produit h2 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  #page__produit .produits .produit h2 span {
+    display: initial;
+  }
+  #page__produit .produits .produit p {
+    padding-top: 20px;
+    font-size: 26px;
+  }
+  #page__produit .produits .produit img {
+    width: 214px;
+    padding-top: 18px;
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1100px) {
+  #page__produit .produits img {
+    padding-top: 70px;
+  }
+}
 
 .video {
   max-width: 100vw;
@@ -395,6 +488,7 @@ body {
 }
 
 #home_page .produit {
+  height: 45vh;
   padding-top: 30px;
   text-align: center;
   margin-top: 10px;
