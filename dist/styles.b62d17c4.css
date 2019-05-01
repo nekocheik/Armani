@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -40,6 +41,23 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+button:hover,
+button:focus {
+	background: #0053ba;
+}
+
+button:focus {
+	outline: none;
+	outline-offset: -4px;
+	text-decoration: none;
+}
+
+button:active {
+	text-decoration: none;
+
 }
 @font-face {
   font-family: "Avenir LT Std 55 Roman";
@@ -107,6 +125,16 @@ table {
   font-weight: normal;
   src: local("Avenir LT Std 95 Black Oblique"), url("/AvenirLTStd-BlackOblique.e92a9532.woff") format("woff");
 }
+body {
+  font-family: Avenir-LT-Std-65-Medium;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1100px) {
+  body {
+    margin-bottom: initial;
+  }
+}
+
 body {
   font-size: 12px;
   padding-bottom: 60px;
@@ -215,16 +243,6 @@ body {
   }
 }
 
-body {
-  font-family: Avenir-LT-Std-65-Medium;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1100px) {
-  body {
-    margin-bottom: initial;
-  }
-}
-
 #page__article h1 {
   font-size: 18px;
   text-align: center;
@@ -280,6 +298,67 @@ body {
   }
 }
 
+#page__produit {
+  text-align: center;
+}
+#page__produit .title h1 {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+#page__produit .title h2 {
+  font-size: 18px;
+}
+#page__produit .title h3 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+#page__produit .picture {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 98%;
+  margin: auto;
+  height: 350px;
+  background: #F4F4F4;
+}
+#page__produit .picture img {
+  width: 200px;
+  display: none;
+  margin: auto auto auto auto;
+}
+#page__produit .picture img.active {
+  display: initial;
+}
+#page__produit .text__description {
+  height: 30vh;
+  overflow: hidden;
+}
+#page__produit .text__description p {
+  font-size: 16px;
+  line-height: 1.8;
+  width: 80vw;
+  margin: auto;
+}
+#page__produit .text__description p.prix {
+  padding: 10px 0px 10px 0px;
+}
+#page__produit .text__description.active {
+  height: 100%;
+}
+#page__produit .read__next {
+  font-size: 18px;
+}
+#page__produit .read__next:before {
+  content: "  ";
+  width: 30vw;
+  height: 2px;
+  display: block;
+  margin: 10px auto 5px auto;
+  background-color: black;
+}
+
 .video {
   max-width: 100vw;
   max-height: 40vh;
@@ -297,6 +376,7 @@ body {
   height: 577px;
   background-color: #F4F4F4;
   overflow: hidden;
+  position: relative;
 }
 #home_page .produit.produit--black {
   color: white;
@@ -332,6 +412,17 @@ body {
   width: 214px;
   padding-top: 120px;
 }
+#home_page .produit .parallax {
+  position: absolute;
+  top: -10px;
+  left: 25vw;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+}
+#home_page .produit .parallax .cercle {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   #home_page .produit {
     max-height: 70vh;
@@ -351,6 +442,11 @@ body {
     width: 214px;
     padding-top: 18px;
     padding-left: 10px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #home_page .produit img {
+    padding-top: 70px;
   }
 }
 #home_page article {

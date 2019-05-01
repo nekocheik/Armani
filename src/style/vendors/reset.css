@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -40,4 +41,21 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+button:hover,
+button:focus {
+	background: #0053ba;
+}
+
+button:focus {
+	outline: none;
+	outline-offset: -4px;
+	text-decoration: none;
+}
+
+button:active {
+	text-decoration: none;
+
 }

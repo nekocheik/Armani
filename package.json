@@ -21,5 +21,8 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
     "sass": "^1.17.3"
+  },
+  "dependencies": {
+    "rellax": "^1.9.1"
   }
 }
