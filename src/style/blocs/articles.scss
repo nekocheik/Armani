@@ -1,0 +1,57 @@
+#page__article{
+  h1{
+    font-size: 18px;
+    text-align: center;
+    span{
+      display: block;
+    }
+    padding: 20px;
+  }
+  ////_____________________________________________article__mobile_____________________________________________ ////
+  .article{
+    height: 100vh;
+    width: 90%;
+    background-color: $grisprincipal;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    .illustration img{
+      max-height: 50vw;
+      z-index: 0;
+      margin: 4% 0% 0% 4%;
+    }
+    .article__texte{
+      display: block;
+      width: 90%;
+      margin: -20px 0% 0% 20px ;
+      padding: 20px;
+      z-index: 1;
+      background-color: white;
+      p{
+        font-size: 15px;
+        line-height: 1.6;
+        height: 100%;
+      }
+    }
+    
+  }
+  @media screen and (min-width: 800px) {
+    h1{
+      font-size: 20px;
+      span{
+        display:initial;
+      }
+    }
+    .article{
+      width: 90%;
+      .illustration img{
+        height: 500px;
+      }
+      .article__texte{
+        margin: -13% 0% 0% 13%;
+        width: 60vw;
+      }
+    }
+
+  }
+}

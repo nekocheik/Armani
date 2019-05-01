@@ -246,6 +246,59 @@ body {
   margin-bottom: 30px;
 }
 
+#page__article h1 {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+#page__article h1 span {
+  display: block;
+}
+#page__article .article {
+  height: 100vh;
+  width: 90%;
+  background-color: #F4F4F4;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+#page__article .article .illustration img {
+  max-height: 50vw;
+  z-index: 0;
+  margin: 4% 0% 0% 4%;
+}
+#page__article .article .article__texte {
+  display: block;
+  width: 90%;
+  margin: -20px 0% 0% 20px;
+  padding: 20px;
+  z-index: 1;
+  background-color: white;
+}
+#page__article .article .article__texte p {
+  font-size: 15px;
+  line-height: 1.6;
+  height: 100%;
+}
+@media screen and (min-width: 800px) {
+  #page__article h1 {
+    font-size: 20px;
+  }
+  #page__article h1 span {
+    display: initial;
+  }
+  #page__article .article {
+    width: 90%;
+  }
+  #page__article .article .illustration img {
+    height: 500px;
+  }
+  #page__article .article .article__texte {
+    margin: -13% 0% 0% 13%;
+    width: 60vw;
+  }
+}
+
 .video {
   max-width: 100vw;
   max-height: 40vh;

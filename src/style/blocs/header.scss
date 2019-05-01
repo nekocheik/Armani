@@ -59,15 +59,17 @@ body{
       margin: 20px;
     }
   }
-
+////_____________________________________________version desktop _____________________________________________ ////
 
   @media screen and (min-width: 1100px) { 
+
     position: sticky ;
     top: 0px;
     flex-direction: row;
     background-color: black;
     justify-content: space-evenly;
     padding-top: 15px; 
+
     nav{
       background-color: transparent;
       width: auto;
