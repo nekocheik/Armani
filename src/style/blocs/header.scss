@@ -36,7 +36,7 @@ body{
       }
     }
   }
-
+  
   .nav_hidden{
     background-color: #2B2B2B;
     position: fixed ;
@@ -50,18 +50,22 @@ body{
     transform: translateY(67px);
     transition-timing-function: linear;
     font-family: Avenir-LT-Std-45-Book ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 130px;
+
     &.active{
       transform: translateY(-67px);
     }
-    p{
-      &:nth-child(1) {
+    a{
+      p{
         padding-top: 35px;
-      } 
-      margin: 20px;
+      }
     }
   }
-////_____________________________________________version desktop _____________________________________________ ////
-
+  ////_____________________________________________version desktop _____________________________________________ ////
+  
   @media screen and (min-width: 1100px) { 
     position: sticky ;
     top: 0px;
@@ -96,17 +100,17 @@ body{
       top: initial;
       padding-left: initial;
       width: initial;
-
-
+      
+      
       display: contents;
       transform: translateY(-0px);
       position: relative;
       padding-top: 17px;
-
+      
       &.active{
         transform: translateY(0px);
       }
-
+      
       p:nth-child(1){
         padding-top: 0px;
       }p{
