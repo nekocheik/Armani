@@ -63,21 +63,24 @@ body{
 ////_____________________________________________version desktop _____________________________________________ ////
 
   @media screen and (min-width: 1100px) { 
-
     position: sticky ;
     top: 0px;
     flex-direction: row;
     background-color: black;
+    height: 62px;
     justify-content: space-evenly;
-    padding-top: 15px; 
-
+    width: 30%;
+    padding: 0% 35% 0% 35%;
+    margin: auto;
     nav{
       background-color: transparent;
       width: auto;
       padding-top: initial; 
+      display: block;
+      height: 17px;
+      margin: auto 0px auto 0px;
       img{
         height: 17px;
-        margin: initial;
         &.active{
           transform: translateY(-0px);
         }
@@ -107,7 +110,7 @@ body{
       p:nth-child(1){
         padding-top: 0px;
       }p{
-        margin: 0px;
+        margin: auto 0px auto 0px;
       }
     }
   }

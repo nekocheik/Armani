@@ -203,17 +203,22 @@ body {
     top: 0px;
     flex-direction: row;
     background-color: black;
+    height: 62px;
     justify-content: space-evenly;
-    padding-top: 15px;
+    width: 30%;
+    padding: 0% 35% 0% 35%;
+    margin: auto;
   }
   .nav__barre nav {
     background-color: transparent;
     width: auto;
     padding-top: initial;
+    display: block;
+    height: 17px;
+    margin: auto 0px auto 0px;
   }
   .nav__barre nav img {
     height: 17px;
-    margin: initial;
   }
   .nav__barre nav img.active {
     transform: translateY(0px);
@@ -239,7 +244,7 @@ body {
     padding-top: 0px;
   }
   .nav__barre .nav_hidden p {
-    margin: 0px;
+    margin: auto 0px auto 0px;
   }
 }
 
@@ -415,6 +420,7 @@ body {
 @media screen and (min-width: 1100px) {
   #page__produit .text__description {
     width: 45vw;
+    height: 50vh;
     text-align: center;
   }
   #page__produit .text__description .title {
@@ -473,9 +479,8 @@ body {
   font-size: 18px;
 }
 #page__produit .produits .produit {
-  padding-top: 30px;
   text-align: center;
-  margin-top: 10px;
+  margin: 10px;
   height: 500px;
   background-color: #F4F4F4;
   overflow: hidden;
