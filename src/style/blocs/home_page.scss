@@ -19,13 +19,13 @@
     background-color: $grisprincipal ;
     overflow: hidden;
     position: relative;
-
+    
     &.produit--black{
       color: white;
       background-color: black;
       right: 0px;
     }
-
+    
     h2{
       font-size: 18px;
       padding-top: 30px; 
@@ -50,22 +50,32 @@
       margin-top: 40px;
       border: none;
     }
-  img{
+    img{
       width: 214px;
       padding-top: 120px;
     }
-
+    
     // to make a parallax effect with the circles
-   
-      .cercle{
-        position: absolute;
+    
+    .cercle{
+      position: absolute;
+      &.cercle--left{
+        top: 20%;
+        right: -150px;
+      }
+      &.cercle--right{
+        top: 30%;
+        left: -150px;
+      }
+      @media screen and (min-width : 1100px){
         &.cercle--left{
           top: 20%;
-          left: -150px;
+          right: 150px;
         }
         &.cercle--right{
           top: 30%;
-          right:-150px;
+          left: 150px;
+        }
       }
     }
     
@@ -90,10 +100,10 @@
         padding-left: 10px;
       }
     }
-     ////_____________________________________________produit--desktop_____________________________________________ ////
-     @media screen and (min-width: 1100px) {
+    ////_____________________________________________produit--desktop_____________________________________________ ////
+    @media screen and (min-width: 1100px) {
       img{
-        padding-top: 70px;
+        padding-top: 30px;
       }
     }
   }
@@ -123,21 +133,21 @@
       margin-top: 30px;
       &.new--one{
         background: linear-gradient(
-          rgba(0, 0, 0, 0.541), 
-          rgba(0, 0, 0, 0.541)
-          ),url(../assets/image/armani-montres-shawn-850x1024/armani-montres-shawn-850x1024.png);
-          background-size:cover;
-          background-repeat:no-repeat;
+        rgba(0, 0, 0, 0.541), 
+        rgba(0, 0, 0, 0.541)
+        ),url(../assets/image/armani-montres-shawn-850x1024/armani-montres-shawn-850x1024.png);
+        background-size:cover;
+        background-repeat:no-repeat;
       }&.new--two{
         background: linear-gradient(
-          rgba(0, 0, 0, 0.45), 
-          rgba(0, 0, 0, 0.45)
-          ),url(../assets/image/maxresdefault.png);
-          background-size:cover;
-          background-repeat:no-repeat;
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+        ),url(../assets/image/maxresdefault.png);
+        background-size:cover;
+        background-repeat:no-repeat;
       }
       h3{
-       margin-top: 30px;
+        margin-top: 30px;
         font-family: 'Avenir LT Std 85 Heavy';
         font-size:  17px;
         padding-top: 73px;

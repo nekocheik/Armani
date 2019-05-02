@@ -34,13 +34,27 @@ for (let i = 0; i < selectPictures.length; i++) {
   })
 }
 
-var rellaxs = require('rellax');
 
-var rellax = new rellaxs('.cercle', {
-  speed: -2,
-  center: true,
-  wrapper: null,
-  round: true,
-  vertical: true,
-  horizontal: false
-});
+
+var element__parallax = document.querySelectorAll('.cercle')
+
+// load the librairy of parralax whene had need //
+if (element__parallax.length > 0 ) {
+  var rellaxs = require('rellax');
+  var rellax = new rellaxs('.cercle', {
+    speed: -2,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+  var rellax = new rellaxs('.image__parallax', {
+    speed: -1,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+}

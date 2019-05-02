@@ -518,16 +518,28 @@ for (var i = 0; i < selectPictures.length; i++) {
   _loop(i);
 }
 
-var rellaxs = require('rellax');
+var element__parallax = document.querySelectorAll('.cercle'); // load the librairy of parralax whene had need //
 
-var rellax = new rellaxs('.cercle', {
-  speed: -2,
-  center: true,
-  wrapper: null,
-  round: true,
-  vertical: true,
-  horizontal: false
-});
+if (element__parallax.length > 0) {
+  var rellaxs = require('rellax');
+
+  var rellax = new rellaxs('.cercle', {
+    speed: -2,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+  var rellax = new rellaxs('.image__parallax', {
+    speed: -1,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+}
 },{"rellax":"../node_modules/rellax/rellax.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -556,7 +568,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52078" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62450" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -8,11 +8,9 @@
   <title>Armani</title>
 <script src="/styles.b62d17c4.js"></script></head>
 
-<div class="video">
+<div class="video" id="video">
   <video src="/armani-video.dceb9d97.mp4"></video>
 </div>
-
-
 
 <section class="nav__barre">
   <nav>
@@ -21,20 +19,22 @@
       <li></li>
       <li></li>
     </ul>
-    <a href="/index.html"> <img src="/logo-armani.64fba8b6.png" alt="logo"></a>
+    <a href="#video"> <img src="/logo-armani.64fba8b6.png" alt="logo"></a>
   </nav>
   <div class="nav_hidden">
-    <p>Les montres</p>
-    <p>La marque</p>
+    <a href="#produits"><p>Les montres</p></a>
+    <a href="#articles"><p>les news</p></a>
   </div>
 </section>
+
+
 <body id="home_page">
-  <section class="produits">
+  <section class="produits" id="produits">
     <div class="produit">
       <h2>Montre connectée tactile 5000</h2>
       <p>combine le style dynamique d’Emporio Armani à l’innovation technologique.</p>
       <a href="/pages/produit_Montre_connectée_tactile_5000.html"><button class="look__the__produit">Voir le produit</button></a>
-      <img src="/connected-front.fc9f294b.png">
+      <img class="image__parallax" src="/connected-front.fc9f294b.png">
           <img data-rellax-speed="-5" src="/cercle@2x.55dc1297.png" class="cercle cercle--left">
           <img data-rellax-speed="7" src="/cercle@2x.55dc1297.png" class="cercle cercle--right">
         </div>
@@ -46,8 +46,8 @@
     <div class="produit produit--black">
       <h2>Montre inox avec bracelet à <span>mailles tressées</span></h2>
       <p>l’expression d’une envie d’élégance sophistiquée.</p>
-      <a href="/pages/produit_Montre_connectée_tactile_5000.html"><button class="look__the__produit">Voir le produit</button></a>
-      <img src="/Montre-connecter.58b2e27c.png">
+      <a href="/pages/produit_Montre_inox.html"><button class="look__the__produit">Voir le produit</button></a>
+      <img class="image__parallax" src="/Montre-connecter.58b2e27c.png">
     </div>
     
     
@@ -59,7 +59,7 @@
       <img src="/Montre-inox.05cfd8fe.png">
     </div>
     
-    <article>
+    <article id="articles">
       <h2>Articles</h2>
       <div class="new new--one">
         <h3>Emporio Armani Connected de <span>nouvelles montres intelligentes</span></h3>
