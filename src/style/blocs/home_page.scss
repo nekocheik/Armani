@@ -56,19 +56,16 @@
     }
 
     // to make a parallax effect with the circles
-    .parallax{
-      position: absolute;
-      top: -10px;
-      left: 25vw;
-      display: flex;
-      margin: auto;
-      justify-content: space-evenly;
+   
       .cercle{
-        display: block;
+        position: absolute;
         &.cercle--left{
+          top: 20%;
+          left: -10px;
         }
         &.cercle--right{
-       }
+          top: 30%;
+          right:-10px;
       }
     }
     

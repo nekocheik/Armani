@@ -33,3 +33,14 @@ for (let i = 0; i < selectPictures.length; i++) {
     selectPicture.className = 'active';
   })
 }
+
+var rellaxs = require('rellax');
+
+var rellax = new rellaxs('.cercle', {
+  speed: -2,
+  center: true,
+  wrapper: null,
+  round: true,
+  vertical: true,
+  horizontal: false
+});

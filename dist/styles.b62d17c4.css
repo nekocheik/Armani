@@ -606,16 +606,16 @@ body {
   width: 214px;
   padding-top: 120px;
 }
-#home_page .produit .parallax {
+#home_page .produit .cercle {
   position: absolute;
-  top: -10px;
-  left: 25vw;
-  display: flex;
-  margin: auto;
-  justify-content: space-evenly;
 }
-#home_page .produit .parallax .cercle {
-  display: block;
+#home_page .produit .cercle.cercle--left {
+  top: 20%;
+  left: -10px;
+}
+#home_page .produit .cercle.cercle--right {
+  top: 30%;
+  right: -10px;
 }
 @media screen and (min-width: 768px) {
   #home_page .produit {
