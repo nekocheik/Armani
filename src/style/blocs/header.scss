@@ -51,17 +51,16 @@ body{
     transition-timing-function: linear;
     font-family: Avenir-LT-Std-45-Book ;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    height: 130px;
+    height: 109px;
+    padding-top: 22px;
 
     &.active{
       transform: translateY(-67px);
     }
     a{
-      p{
-        padding-top: 35px;
-      }
+      display: contents;
     }
   }
   ////_____________________________________________version desktop _____________________________________________ ////
