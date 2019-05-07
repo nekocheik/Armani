@@ -400,7 +400,8 @@ body {
     flex-direction: row-reverse;
     justify-content: flex-end;
     height: initial;
-    width: 1000px;
+    width: 600px;
+    max-height: 1000px;
   }
   #page__produit .picture img {
     margin: 10px;
@@ -449,7 +450,7 @@ body {
 }
 @media screen and (min-width: 1100px) {
   #page__produit .text__description {
-    width: 500px;
+    max-width: 723px;
     height: 50vh;
     text-align: center;
   }
