@@ -3,18 +3,18 @@
     font-size: 18px;
     text-align: center;
     font-family: 'Avenir LT Std 85 Heavy';
+    padding: 20px;
     span{
       display: block;
       font-family: 'Avenir-LT-Std-45-Book';
     }
-    padding: 20px;
   }
   ////_____________________________________________article__mobile_____________________________________________ ////
   .article{
-    height: 100vh;
-    width: 90%;
+    height: 88vh;
+    width: 95%;
     background-color: $grisprincipal;
-    margin-left: 2%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     .illustration img{
@@ -29,6 +29,7 @@
       padding: 20px;
       z-index: 1;
       background-color: white;
+      margin-bottom: 20vh;
       p{
         font-size: 15px;
         line-height: 1.6;
@@ -46,14 +47,18 @@
     }
     .article{
       width: 90%;
-      .illustration img{
-        height: 500px;
+      .illustration .image{
+        padding-left: 6vw;
+        max-height: 419px;
+        max-width: 565px;
+        overflow: hidden;
       }
       .article__texte{
-        margin: -13% 0% 0% 13%;
-        width: 60vw;
+        margin: -20% 0% 0% 35%;
+        max-height: 523px;
+        max-width: 642px;
+        margin-bottom: initial;
       }
     }
-
   }
 }
